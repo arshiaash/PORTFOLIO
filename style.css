@@ -128,26 +128,22 @@ section{
 }
 
 .social{
-    margin-bottom: 40px;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    color: var(--main-color);
-    border-radius: 50%;
-    backdrop-filter: brightness(88%);
-    font-size: 20px;
-    margin-right: 17px;
-    box-shadow: 0 0 20px transparent;
-    cursor: pointer;
-    transition: all .50s ease;
+text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+   
 }
 
 .social i:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 20px var(--main-color);
+    color: #ff004f;
+    transform: translateY(-5px);
+    }
+.main-btn{
+    margin-top: 10px;
 }
-
 .btn{
     display: inline-block;
     padding: 11px 26px;
@@ -192,12 +188,13 @@ header.sticky{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 1rem;
+    
 }
 
 .about-img img{
     width: 100%;
-    height: 530px;
-    max-width: 530px;
+    height: 330px;
+    max-width: 330px;
     border-radius: 50%;
     object-fit: cover;
     border: 7px solid var(--main-color);
@@ -414,25 +411,24 @@ form .send-btn{
 form .send-btn:hover{
     background: transparent;
     color: var(--main-color);
-    box-shadow: 0 0 20px var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
     cursor: pointer;
 
 }
 
-.footer{
-    padding: 22px;
-    background: var(--second-bg-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-}
+
 
 .copyright{
-    font-size: 15px;
-    font-weight: 400;
-    color: var(--other-color);
+    width: 100%;
+    align-content: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+    text-align: center;
+    
 }
+
 
 .scroll-top{
     display: inline-flex;
@@ -581,4 +577,7 @@ form .send-btn:hover{
         object-fit: cover;
         margin: 0 auto;
     }
+}
+.footer p{
+    text-align:center;
 }
